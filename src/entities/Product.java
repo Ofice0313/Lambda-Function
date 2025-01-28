@@ -32,6 +32,10 @@ public class Product{
         return p.getName().toUpperCase();
     }
 
+    public String nonStaticUpperCaseName(){
+        return name.toUpperCase();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
