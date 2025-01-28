@@ -28,6 +28,10 @@ public class Product{
         this.price = price;
     }
 
+    public static String staticUpperCaseName(Product p){
+        return p.getName().toUpperCase();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
